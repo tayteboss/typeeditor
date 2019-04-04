@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700|Exo:400,400i,700|Libre+Baskerville:400,400i,700" rel="stylesheet">
     <title>Type Checker</title>
 </head>
 <body>
@@ -17,9 +18,30 @@
             <label>Font Size <span>64px</span></label>
             <input type="range" name="typesize" min=12 max=200 value=64>
         </div>
+        <div>
+            <label>Typeface</label>
+            <select name="typeface">
+                <option value="Helvetica">Helvetica</option>
+                <option value="Libre Baskerville">Libre Baskerville</option>
+                <option value="Arvo">Arvo</option>
+                <option value="Exo">Exo</option>
+            </select>
+        </div>
         <div class="option">
             <label>Leading <span class="lineheight-output">1.5</span></label>
             <input type="range" name="lineheight" min=0.75 max=2.5 value=1.5 step=0.25>
+        </div>
+        <div class="option">
+            <label>Font Weight <span class="fontweight-output">400</span></label>
+            <input type="range" name="fontweight" min=400 max=800 value=400 step=400>
+        </div>
+        <div class="option option-checkbox">
+            <label>italic</label>
+            <input class="checkbox-input" type="checkbox" name="italic">
+        </div>
+        <div class="option colors">
+            <div style="background-color: #2a2a2a; color: #ffffff;" class="selected">a</div>
+            <div style="background-color: #ffffff; color: #2a2a2a;">a</div>
         </div>
 
     </aside>
